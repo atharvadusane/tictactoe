@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&family=Tektur&display=swap');
+/* font-family: 'Roboto', sans-serif;
+font-family: 'Tektur', cursive; */
+*{
+    margin: 0;
+    padding: 0;
+}
+.navbar{
+    display: flex;
+    background-color: rgb(95, 21, 38);
+    color: whitesmoke;
+    height: 65px;
+    padding-left: 30px;
+    font-size: 30px;
+    font-family: 'Tektur', cursive;
+    align-items: center;
+}
+.container{
+    background-color: beige;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.gamecontainer{
+    margin: 20px;
+    display: grid;
+    grid-template-columns: 10vw 10vw 10vw;
+    grid-template-rows: 10vw 10vw 10vw;
+}
+.gameinfo{
+    padding: 30px;
+}
+.box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: solid black;
+    cursor: pointer;
+}
+.boxtext{
+    font-family: 'Roboto', sans-serif;
+    font-size: 8vw;
+}
+.box:hover{
+    background-color: rgb(214, 214, 136);
+    transition-duration: 600ms;
+}
+.heading h2{
+    font-family: 'Tektur', cursive;
+    font-size: 40px;
+}
+.turn{
+    font-family: 'Tektur', cursive;
+    font-size: 25px;
+}
+#reset{
+    font-family: 'Roboto', sans-serif;
+    background-color: rgb(214, 214, 136);
+    width: 80px;
+    height: 30px;
+    font-size: 15px;
+    margin-left: 20px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.playerinfo{
+    padding-top: 20px;
+    font-family: 'Roboto', sans-serif;
+}
+.gameWon img{
+    width: 0;
+    transition: width 1s ease-in-out;
+}
+.bl{
+    border-left: none;
+}
+.br{
+    border-right: none;
+}
+.bt{
+    border-top: none;
+}
+.bb{
+    border-bottom: none;
+}
+
+
+@media screen and (max-width: 800px){
+    .container{
+        flex-wrap: wrap;
+    }
+    .heading h2{
+        font-size: 30px;
+    }
+    .gamecontainer{
+        margin-top: 20px;
+        grid-template-columns: 15vw 15vw 15vw;
+        grid-template-rows: 15vw 15vw 15vw;
+    }
+}
